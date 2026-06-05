@@ -6,7 +6,7 @@
 
 ## Objective
 
-Create a backup of all `.conf` files modified within the last 3 days under `/etc`, preserve the original directory structure, create a symbolic link to the backup, and verify the backup.
+Create a backup of all .conf files modified within the last 3 days under /etc, preserve the original directory structure, create a symbolic link to the backup, and verify the backup.
 
 ---
 
@@ -249,6 +249,16 @@ This task demonstrates:
 
 The backup was successfully created, the directory structure was preserved, the symbolic link was configured correctly, and all matching configuration files were verified.
 
+# Key Insights I learned 
+
+
+While doing this task, I first searched for recently modified `.conf` files inside `/etc` using the `find` command. I expected the backup part to be simple, but I was surprised to see how important preserving the directory structure is. If all configuration files were copied into a single folder, it would be difficult to know where each file originally came from. Using `cp --parents` solved this problem by keeping the original path inside the backup directory.
+
+One issue I faced was while verifying the symbolic link. When I ran `ls -la /root/latest_audit`, I got a "Permission denied" error. At first, I thought the link was not created properly, but then I realized that `/root` is a protected directory and requires `sudo` access. After running the command with `sudo`, I was able to verify that the link was working correctly.
+
+What I found interesting is that this is very similar to what system administrators and cloud engineers do in real environments. Before updating a server or making configuration changes, they often create backups of important configuration files, verify the backup, and keep an easy way to access it. The same concepts are used in cloud platforms like AWS when managing EC2 instances, troubleshooting systems, or automating backup processes through scripts.
+
+Overall, this task helped me understand that Linux administration is not just about running commands individually; it is about combining commands to perform a complete workflow that includes searching, backing up, verifying, and validating results.
 
 
 
