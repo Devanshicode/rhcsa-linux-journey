@@ -27,3 +27,34 @@
 | `cp -r project backup_project`            | Creates a recursive copy of the entire `project` directory and its contents.                    | When I want to back up a directory before making changes.                     |
 | `mv project/file1.txt project/report.txt` | Renames `file1.txt` to `report.txt` within the `project` directory.                             | When I need to rename a file or reorganize files within a directory.          |
 
+
+
+### Group 3 – Directory Management and Cleanup
+
+
+<img width="1280" height="800" alt="3" src="https://github.com/user-attachments/assets/fe27baf7-85af-460a-b023-d2606815a43e" />
+
+
+| Command                 | What it does                                                                            | When I use it                                                                      |
+| ----------------------- | --------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
+| `mkdir emptydir`        | Creates a new empty directory named `emptydir`.                                         | When I need a new folder to organize files or projects.                            |
+| `rmdir emptydir`        | Removes an empty directory.                                                             | When I want to delete a directory that no longer contains files or subdirectories. |
+| `rm -rf backup_project` | Recursively and forcefully removes the `backup_project` directory and all its contents. | When I need to permanently delete a directory tree without confirmation prompts.   |
+| `ls -R`                 | Lists the contents of the current directory and all subdirectories recursively.         | When I want to view the complete directory structure from my current location.     |
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
