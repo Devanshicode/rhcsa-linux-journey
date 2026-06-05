@@ -1,3 +1,5 @@
-Day-1 Navigation,Files and Directories 
-RHCSA linux on Oracle Virtualbox | 5 june 2026 
- Group 1 - where am I? what is here? 
+# Day-1 Navigation, Files and Directories
+
+## RHCSA Linux on Oracle VirtualBox | 5 June 2026
+
+### Group 1 - Where am I? What is here?
