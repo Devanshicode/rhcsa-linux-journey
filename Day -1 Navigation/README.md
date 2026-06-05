@@ -1,8 +1,4 @@
-## 📂 Day 1 Contents
 
-1. [Task Solution](01_task_solution.md)
-2. [Thinking Questions & Reflections](02_thinking_question.md)
-   
 # Day-1 Navigation, Files and Directories
 
 ## RHCSA Linux on Oracle VirtualBox | 
