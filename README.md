@@ -24,7 +24,7 @@ This repository contains my hands-on Linux practice, notes, challenges, and key 
 * Shell Scripting
 * RHCSA Practice Labs
 
-## 🛠 Learning Approach
+##  Learning Approach
 
 For each task, I document:
 
