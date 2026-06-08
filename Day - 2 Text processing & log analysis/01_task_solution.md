@@ -1,6 +1,12 @@
 
 # Task 2: SSH Failed Login Analysis
 
+
+<img width="1280" height="800" alt="day 2 task" src="https://github.com/user-attachments/assets/900832a4-5fde-4c6d-98d1-a17fe1beaa0a" />
+
+
+
+
 ## Objective
 
 The objective of this task is to analyze the Linux security log file and identify failed SSH login attempts. By using Linux command-line tools such as grep, awk, sort, uniq, and cat, I extracted failed login records, identified suspicious IP addresses, counted their occurrences, extracted targeted usernames, and generated a ranked security report. This task helped me understand basic log analysis and cybersecurity investigation techniques using only Linux commands.
