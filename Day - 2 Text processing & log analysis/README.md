@@ -5,7 +5,7 @@
 
 
 
-| Command                    | What it Does                                                                            | When I Use It (My Words)                                                                      |
+| Command                    | What it Does                                                                            | When I Use It                                                                      |
 | -------------------------- | --------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
 | `cat /etc/passwd`          | Displays the entire contents of the `/etc/passwd` file.                                 | I use it when I want to quickly view all users configured on the Linux system.                |
 | `tail -f /var/log/secure`  | Shows the latest lines of a log file and continuously updates as new entries are added. | I use it when I want to monitor logs in real time while troubleshooting or testing something. |
@@ -70,7 +70,7 @@
 | `cut -d: -f1 /etc/passwd` | Extracts specific fields from text using `:` as a separator | I use it when I need only a particular column from a file, such as usernames from `/etc/passwd`. |                                                                                  |
 | `sed 's/old/new/g' file`  | Replaces text patterns in a file or output                  | I use it when I want to quickly modify words or values without editing the file manually.        |                                                                                  |
 | `uniq -c sorted.txt`      | Counts repeated consecutive lines                           | I use it when I need to find duplicate entries and see how many times they occur.                |                                                                                  |
-| `                         | ` (pipe)                                                    | Passes output of one command to another command                                                  | I use it when I want to combine multiple commands and process data step by step. |
+| `                         | ` (pipe)                                                    | Passes output of one command to another command                                                                                                                  | I use it when I want to combine multiple commands and process data step by step. |
 
 
 
