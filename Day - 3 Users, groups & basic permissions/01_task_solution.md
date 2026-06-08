@@ -243,7 +243,12 @@ root
 
 Confirms alice has admin privileges.
 
-
+## Final Verification Commands
+```bash
+getent group devteam
+passwd -S alice
+passwd -S carol
+```
 
 
 # Key Insights I Learned
