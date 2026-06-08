@@ -18,7 +18,7 @@ Create users alice (sudo access), bob (no sudo), carol (locked). Create group 'd
 ### Command
 
 ```bash
-sudo -i
+sudo -l
 ```
 
 ### Explanation
