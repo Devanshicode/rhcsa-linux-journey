@@ -24,7 +24,7 @@ sudo -i
 ### Explanation
 
 * `sudo` → runs command with admin privileges
-* `-i` → opens root shell session
+* `-l` → opens root shell session
 
 ### Purpose
 
