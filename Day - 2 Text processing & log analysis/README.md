@@ -70,7 +70,7 @@
 | `cut -d: -f1 /etc/passwd` | Extracts specific fields from text using `:` as a separator | I use it when I need only a particular column from a file, such as usernames from `/etc/passwd`. |                                                                                  |
 | `sed 's/old/new/g' file`  | Replaces text patterns in a file or output                  | I use it when I want to quickly modify words or values without editing the file manually.        |                                                                                  |
 | `uniq -c sorted.txt`      | Counts repeated consecutive lines                           | I use it when I need to find duplicate entries and see how many times they occur.                |                                                                                  |
-| `                         | ` (pipe)                                                    | Passes output of one command to another command                                                                                                                  | I use it when I want to combine multiple commands and process data step by step. |
+| `                         | ` (pipe)                                                    | Passes output of one command to another command                                                                                                                                      |
 
 
 
