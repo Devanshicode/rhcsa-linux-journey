@@ -243,44 +243,6 @@ root
 
 Confirms alice has admin privileges.
 
----
-
-# Final Verification Commands
-
-```bash
-getent group devteam
-passwd -S alice
-passwd -S carol
-```
-
----
-
-# Summary Table
-
-| Command       | What It Does                | When I Use It                |
-| ------------- | --------------------------- | ---------------------------- |
-| `useradd`     | Creates new user            | When adding new system users |
-| `passwd`      | Sets/locks password         | To manage login security     |
-| `groupadd`    | Creates group               | To manage users collectively |
-| `usermod -aG` | Adds user to group          | To assign permissions        |
-| `chage`       | Sets password expiry policy | To enforce security rules    |
-| `passwd -l`   | Locks user account          | To disable user access       |
-| `id`          | Shows user info             | To verify configuration      |
-| `su -`        | Switch user                 | To test access levels        |
-
----
-
-# Key Learning
-
-This task helped me understand that Linux security is based on **user roles, group membership, and authentication policies**.
-
-* Users define identity
-* Groups define shared permissions
-* Password policies enforce security
-* Account locking controls access without deletion
-
-This is a fundamental concept used in real servers, cloud systems, and DevOps environments where managing access control is critical.
-
 
 
 
