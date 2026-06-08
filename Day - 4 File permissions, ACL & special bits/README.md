@@ -29,14 +29,14 @@
 
 
 
-| Command                                                 | What It Does                                                                                         | When I Use It                                                                                                |
-| ---------------------------------------------------     | ---------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ |
-| `install -m 755 -o root file1 /usr/local/bin/file1.txt` | Copies a file, sets permissions to `755` (`rwxr-xr-x`), and changes owner to `root` in one step.     | When deploying scripts or programs to system directories and setting ownership/permissions at the same time. |
-| `chmod u+x,g-w file1.txt`                               | Adds execute permission for the owner and removes write permission from the group.                   | When I want the owner to run a script but prevent group members from modifying it.                           |
-| `ls -l file1.txt`                                       | Displays detailed file information including permissions, owner, group, size, and modification date. | When checking who can read, write, or execute a file and verifying permission changes.                       |
-| `lsattr file1.txt`                                      | Shows special filesystem attributes such as immutable (`i`) and append-only (`a`).                   | When troubleshooting why a file cannot be modified or checking advanced file protections.                    |
-| `setfacl -x u:bob file1.txt`                            | Removes the ACL (Access Control List) entry for user `bob`.                                          | When revoking special permissions previously granted to a specific user.                                     |
-| `chmod g+s dir1`                                        | Sets the SGID (Set Group ID) bit on a directory so new files inherit the directory's group.          | When creating shared team directories where all files should belong to the same group automatically.         |
+| Command                                                     | What It Does                                                                                         | When I Use It                                                                                                |
+| ---------------------------------------------------         | ---------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ |
+| `install -m 755 -o root file1.txt /usr/local/bin/file1.txt` | Copies a file, sets permissions to `755` (`rwxr-xr-x`), and changes owner to `root` in one step.     | When deploying scripts or programs to system directories and setting ownership/permissions at the same time. |
+| `chmod u+x,g-w file1.txt`                                   | Adds execute permission for the owner and removes write permission from the group.                   | When I want the owner to run a script but prevent group members from modifying it.                           |
+| `ls -l file1.txt`                                           | Displays detailed file information including permissions, owner, group, size, and modification date. | When checking who can read, write, or execute a file and verifying permission changes.                       |
+| `lsattr file1.txt`                                          | Shows special filesystem attributes such as immutable (`i`) and append-only (`a`).                   | When troubleshooting why a file cannot be modified or checking advanced file protections.                    |
+| `setfacl -x u:bob file1.txt`                                | Removes the ACL (Access Control List) entry for user `bob`.                                          | When revoking special permissions previously granted to a specific user.                                     |
+| `chmod g+s dir1`                                            | Sets the SGID (Set Group ID) bit on a directory so new files inherit the directory's group.          | When creating shared team directories where all files should belong to the same group automatically.         |
 
 
 
