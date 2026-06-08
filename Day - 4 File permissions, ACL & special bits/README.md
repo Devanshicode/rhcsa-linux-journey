@@ -41,6 +41,23 @@
 
 
 
+## Group -3 Linux File Permissions & Ownership Management
+
+
+<img width="1280" height="800" alt="4 3" src="https://github.com/user-attachments/assets/5687b419-d26b-4200-bc7f-d72943fd86f6" />
+
+
+
+
+| Command                 | What It Does                                                                                                                                                                                                    | When I Use It                                                                                                                                                         |
+| ----------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `find / -perm /2000`    | Searches the entire system for files or directories that have the **SGID (Set Group ID)** permission set. SGID causes files created inside certain directories to inherit the directory's group ownership.      | When performing security audits, checking special permissions, or investigating how group ownership is being inherited in shared directories.                         |
+| `stat -c %a file`       | Displays the file's permissions in numeric (octal) format such as `644`, `755`, or `777`. The `%a` option prints only the permission bits.                                                                      | When verifying file permissions before changing them with `chmod`, troubleshooting access issues, or documenting security settings.                                   |
+| `chown user:group file` | Changes the owner and group ownership of a file or directory. The user becomes the owner and the specified group becomes the group owner.                                                                       | When assigning files to the correct user account, configuring application directories, managing shared resources, or fixing permission problems after file transfers. |
+| `umask 027`             | Sets the default permission mask for newly created files and directories. A mask of `027` removes write permissions for the group and all permissions for others, resulting in more secure default permissions. | When configuring secure environments where files should not be accessible by unauthorized users. Common in production servers and multi-user systems.                 |
+
+
+
 
 
 
