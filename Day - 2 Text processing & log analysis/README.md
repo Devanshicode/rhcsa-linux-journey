@@ -4,7 +4,6 @@
 <img width="1280" height="800" alt="2 1" src="https://github.com/user-attachments/assets/e68b9602-65e6-4c2e-8786-0e19e75d6f16" />
 
 
-# Linux Text Processing & Log Analysis Commands
 
 | Command                    | What it Does                                                                            | When I Use It (My Words)                                                                      |
 | -------------------------- | --------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
@@ -14,6 +13,8 @@
 | `grep -v '#' config`       | Displays all lines except those containing `#`.                                         | I use it to hide comments and view only the active configuration settings.                    |
 | `awk '{print $1,$3}' file` | Prints only the first and third columns from each line of a file.                       | I use it when I need specific fields from structured text data.                               |
 | `sed -n '10,20p' file`     | Prints only lines 10 through 20 from a file.                                            | I use it when I need to view a particular section of a large file.                            |
+
+
 
 
 
@@ -33,7 +34,10 @@
 
 
 
-## File Investigation Commands
+
+
+
+## Group - 3 File Investigation Commands
 
 
 <img width="1280" height="800" alt="2 3" src="https://github.com/user-attachments/assets/e58c7e6c-a2e0-4f2e-85a0-e8d03782b246" />
@@ -50,6 +54,23 @@
 
 
 
+
+
+
+
+## Group - 4  Content Processing Commands
+
+
+<img width="1280" height="800" alt="2 4" src="https://github.com/user-attachments/assets/aa1d42d0-2656-4483-a92f-fedd04cf0ba1" />
+
+
+
+| Command                   | What it does                                                | When I use it                                                                                    |                                                                                  |
+| ------------------------- | ----------------------------------------------------------- | ------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------- |
+| `cut -d: -f1 /etc/passwd` | Extracts specific fields from text using `:` as a separator | I use it when I need only a particular column from a file, such as usernames from `/etc/passwd`. |                                                                                  |
+| `sed 's/old/new/g' file`  | Replaces text patterns in a file or output                  | I use it when I want to quickly modify words or values without editing the file manually.        |                                                                                  |
+| `uniq -c sorted.txt`      | Counts repeated consecutive lines                           | I use it when I need to find duplicate entries and see how many times they occur.                |                                                                                  |
+| `                         | ` (pipe)                                                    | Passes output of one command to another command                                                  | I use it when I want to combine multiple commands and process data step by step. |
 
 
 
