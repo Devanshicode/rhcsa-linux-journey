@@ -17,6 +17,36 @@
 
 
 
+## Group 2: Data Inspection & Monitoring
+
+<img width="1280" height="800" alt="2 2" src="https://github.com/user-attachments/assets/fc8ef2d0-5740-4ddd-abba-2eee2430800a" />
+
+
+| Command                     | What it Does                                                            | When I Use It                                                            |
+| --------------------------- | ----------------------------------------------------------------------- | ------------------------------------------------------------------------ |
+| `tr 'a-z' 'A-Z'`            | Converts lowercase letters to uppercase.                                | When I need to change text format, e.g., convert output to uppercase.    |
+| `tee file.txt`              | Displays output on the screen and saves it to a file at the same time.  | When I want to view command output and keep a copy in a file.            |
+| `less /var/log/messages`    | Opens a file page-by-page for easy reading.                             | When a file is too large to view comfortably with `cat`.                 |
+| `tail -n 50 file.txt`       | Shows the last 50 lines of a file.                                      | When I want to check recent entries in logs or data files.               |
+| `grep -r "password" /etc/`  | Recursively searches for the word `password` in all files under `/etc`. | When I need to find specific text inside multiple files and directories. |
+| `grep -c "timeout" log.txt` | Counts how many times the word `timeout` appears in a file.             | When I need a quick count of matching entries without displaying them.   |
+
+
+
+## File Investigation Commands
+
+
+<img width="1280" height="800" alt="2 3" src="https://github.com/user-attachments/assets/e58c7e6c-a2e0-4f2e-85a0-e8d03782b246" />
+
+
+| Command                        | What it does                                                                          | When I use it                                                                          |
+| ------------------------------ | ------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
+| `awk -F: '$3>999' /etc/passwd` | Uses `:` as a separator and displays users whose UID (3rd field) is greater than 999. | I use it when I want to filter specific data from a file based on conditions.          |
+| `sort -k2 -n file`             | Sorts the contents of a file numerically using the 2nd column.                        | I use it when I need data arranged in ascending numerical order by a particular field. |
+| `diff file1 file2`             | Compares two files and shows the differences between them.                            | I use it when I want to check changes between two versions of a file.                  |
+| `head -20 file`                | Displays the first 20 lines of a file.                                                | I use it when I want a quick preview of a large file without opening the entire file.  |
+| `wc -l file`                   | Counts the total number of lines in a file.                                           | I use it when I need to know how many records or lines a file contains.                |
+| `grep -i 'fail' log`           | Searches for the word `fail` in a file, ignoring uppercase and lowercase differences. | I use it when I want to quickly find specific keywords in logs or text files.          |
 
 
 
