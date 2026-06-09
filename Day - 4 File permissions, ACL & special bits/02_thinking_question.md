@@ -2,7 +2,7 @@
 
 # Thinking Questions and Practical Insights
 
-# Thinking Questions & Practical Insights
+
 
 ## 1. chmod 777 on an upload directory on a web server — what specific attack does this enable?
 
