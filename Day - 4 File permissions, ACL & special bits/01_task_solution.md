@@ -440,23 +440,22 @@ Creates a security audit of programs that run with elevated privileges.
 
 ---
 
-# Step 17: Review Audit Results
 
-## Command
+# Key Insights I Learned
 
-```bash
-head /tmp/suid_audit.txt
-```
 
-## Example Output
 
-```text
-/usr/bin/passwd
-/usr/bin/su
-/usr/bin/mount
-/usr/bin/chsh
-```
 
+I originally thought normal Linux permissions were enough to control access. Then I learned that ACLs can override and extend traditional permissions. The SGID bit was also surprising because new files automatically inherited the group ownership without any manual intervention.
+The immutable attribute was another eye-opener. Even root cannot casually modify an immutable file until the attribute is removed. This provides an additional layer of protection beyond normal permissions.
+
+
+At first, I expected Bob's group membership to automatically make him read-only. However, group permissions and ACLs interact differently than I expected. I had to verify permissions using getfacl and test access carefully. I also noticed that auditing SUID binaries generated many permission errors. Using 2>/dev/null cleaned up the output and made the actual results readable.
+
+
+This lab closely resembles how enterprise Linux servers are managed. Development teams often use SGID directories so project files maintain consistent ownership. Security teams use ACLs to enforce least-privilege access. Critical configuration files are protected against accidental modification, and SUID audits are regularly performed during compliance reviews.
+
+In cloud environments such as AWS EC2, Linux administrators and DevOps engineers frequently implement these exact controls to secure production systems, shared applications, and deployment environments.
 
 
 
