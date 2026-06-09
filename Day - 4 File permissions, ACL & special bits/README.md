@@ -59,6 +59,25 @@
 
 
 
+## Group - 4 Linux Permissions, ACLs & Group Management
+
+
+
+
+<img width="1280" height="800" alt="4 4" src="https://github.com/user-attachments/assets/ca6b88c3-87c6-4de9-9a31-3deb9ce545df" />
+
+
+
+
+
+
+| Command             | What It Does                              | When I Use It                                                         |
+| ------------------- | ----------------------------------------- | --------------------------------------------------------------------- |
+| `getfacl file`      | Shows ACL permissions on a file           | To check who has special access to a file                             |
+| `setfacl -b file`   | Removes all ACL entries                   | To reset a file back to normal Linux permissions                      |
+| `chmod +t dir/`     | Sets Sticky Bit on a directory            | For shared directories where users should only delete their own files |
+| `newgrp devteam`    | Switches current session to another group | After being added to a group without logging out                      |
+| `chmod -R 750 dir/` | Changes permissions recursively           | To secure an entire project directory and its contents                |
 
 
 
