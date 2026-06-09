@@ -457,25 +457,9 @@ head /tmp/suid_audit.txt
 /usr/bin/chsh
 ```
 
-## Purpose
 
-Review the first few discovered SUID binaries.
 
----
 
-# Final Verification Checklist
-
-```bash
-ls -ld /srv/project
-getfacl /srv/project
-lsattr /srv/project/config.conf
-ls -ld /tmp/shared
-head /tmp/suid_audit.txt
-```
-
-## What I Learned
-
-This lab taught me how Linux uses permissions, ACLs, SGID, Sticky Bit, immutable files, and SUID binaries to control access and improve security. These features are commonly used in enterprise Linux servers, DevOps environments, RHCSA administration tasks, and cloud platforms such as AWS EC2.
 
 
 
