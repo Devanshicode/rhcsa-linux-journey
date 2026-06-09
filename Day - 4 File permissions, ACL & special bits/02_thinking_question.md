@@ -6,7 +6,7 @@
 
 ## 1. chmod 777 on an upload directory on a web server — what specific attack does this enable?
 
-### Ans:
+### Answer:
 
 When I first learned about `chmod 777`, I thought it was the easiest way to fix permission problems because it gives everyone full access. Then I understood why Linux administrators consider it dangerous, especially on web servers.
 
@@ -15,11 +15,11 @@ A web application often allows users to upload files. If the upload directory ha
 The attack is called a **Web Shell Attack** or **Remote Code Execution (RCE)** attack.
 This taught me that permissions are not just about access—they are also a security boundary. In real cloud environments, upload directories are carefully restricted because one incorrect permission can turn a normal website into an entry point for attackers.
 
----
+
 
 ## 2. SUID on /usr/bin/passwd is necessary and safe. SUID on a custom script is dangerous. What is the difference?
 
-### Ans:
+### Answer:
 
 When I first saw the SUID bit, I thought it simply gave extra privileges to any program. Then I learned that not all programs are equal.
 
@@ -29,11 +29,11 @@ A custom script is different. Scripts often depend on environment variables, ext
 
 This taught me that the danger is not SUID itself—the danger is giving high privileges to code that has not been thoroughly secured. In production environments, administrators rarely place SUID on custom scripts because a small coding mistake could become a full privilege-escalation vulnerability.
 
----
+
 
 ## 3. SGID on a directory means all new files inherit the group. How does this solve the "team shared folder" problem without using ACL?
 
-### Ans:
+### Answer:
 
 When I first worked with shared folders, I assumed every team member would automatically have access to each other's files if they were in the same group. Then I discovered that new files normally inherit the creator's primary group, which can create permission problems.
 
@@ -43,11 +43,11 @@ When the SGID bit is applied to a directory, every new file created inside that 
 
 What surprised me is that Linux solves this collaboration problem with a single permission bit instead of complex configuration. In real companies, development teams often use SGID directories for shared project folders because it provides consistent group ownership without needing ACLs on every file.
 
----
+
 
 ## 4. chattr +i protects even from root. When would you use this in production? When would it be a problem?
 
-### Ans:
+### Answer:
 
 When I first heard about `chattr +i`, I thought root could always modify anything on a Linux system. Then I learned that the immutable attribute adds an extra layer of protection.
 
