@@ -64,6 +64,42 @@
 
 
 
+## Group - 4 Shell Productivity, Documentation & Session Management Commands
+
+
+
+
+<img width="1280" height="800" alt="5 4" src="https://github.com/user-attachments/assets/a5663f69-18f0-44fb-933c-f97a34579ed6" />
+
+
+
+
+
+
+| Command            | What It Does                                   | When to Use It                                 |
+| ------------------ | ---------------------------------------------- | ---------------------------------------------- |
+| `Ctrl + R`         | Searches command history interactively         | When you want to find and rerun an old command |
+| `source ~/.bashrc` | Reloads Bash configuration without logging out | After editing `.bashrc`                        |
+| `man command`      | Opens the manual page for a command            | When you want detailed documentation           |
+| `time command`     | Measures how long a command takes to run       | To analyze performance                         |
+| `cat session.log`  | Displays contents of a log file                | To read saved logs or outputs                  |
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
