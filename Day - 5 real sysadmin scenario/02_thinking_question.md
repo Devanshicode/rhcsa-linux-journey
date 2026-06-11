@@ -1,5 +1,5 @@
 
-# Thinking Questions 
+# Thinking Questions and Practical Insights
 
 
 # Thinking Questions & Practical Insights
