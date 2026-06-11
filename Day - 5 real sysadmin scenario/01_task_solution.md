@@ -261,14 +261,6 @@ Displays the final report.
 
 
 
-# What I Learned
-
-This capstone project taught me how Linux administrators perform an initial security assessment on a server. Instead of checking everything manually, I learned how to combine tools such as `awk`, `find`, `lastlog`, and output redirection to generate a structured audit report. These same concepts are used in RHCSA, cloud administration, and real-world production environments to identify suspicious users, risky permissions, recent configuration changes, and potential security issues.
-
-
-
-
-
 
 
 ## Key Insights I Learned
