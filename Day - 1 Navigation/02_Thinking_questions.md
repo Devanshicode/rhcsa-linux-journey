@@ -13,7 +13,7 @@ What surprised me was the '--parents' option. It tells 'cp' to recreate the comp
 
 I now understand that normal 'cp' focuses only on the file, while 'cp --parents' focuses on both the file and its original location.
 
----
+
 
 ### Q2: 'rm -rf' has no undo — what does this teach me about how Linux trusts its users vs Windows which asks "Are you sure?"
 
@@ -25,7 +25,7 @@ After using Linux more, I understood that Linux follows a different philosophy. 
 
 This also taught me why Linux administrators are always careful before running commands as root. A single wrong path in 'rm -rf' can delete important files instantly. In real cloud environments, this is why engineers create backups before making major changes. The system gives you power, but it also expects responsibility.
 
----
+
 
 ### Q3: 'find' uses '-mtime' for time and '-name' for filename — how would I combine BOTH in one command to find '.conf' files modified in the last 7 days?
 
@@ -44,7 +44,7 @@ This searches for files that satisfy both conditions:
 
 What I learned here is that 'find' acts like a filter. Each option removes files that do not match until only the required files remain.
 
----
+
 
 ### Q4: In AWS, this task is equal to an S3 backup script. How would the `find + cp` logic translate to `aws s3 cp` commands?
 
