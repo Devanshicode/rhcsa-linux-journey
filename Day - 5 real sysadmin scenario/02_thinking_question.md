@@ -2,7 +2,7 @@
 # Thinking Questions and Practical Insights
 
 
-# Thinking Questions & Practical Insights
+
 
 ## 1. You found 3 world-writable directories outside /tmp. Are they dangerous? How do you decide?
 
