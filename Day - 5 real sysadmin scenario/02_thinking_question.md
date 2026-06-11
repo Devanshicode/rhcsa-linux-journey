@@ -6,7 +6,7 @@
 
 ## 1. You found 3 world-writable directories outside /tmp. Are they dangerous? How do you decide?
 
-### Ans:
+### Answer:
 
 When I first learned about world-writable directories, I assumed they were automatically dangerous. Then I understood that the real question is not whether a directory is writable by everyone, but whether it is writable in a location where it should not be.
 
@@ -16,11 +16,10 @@ To decide whether a world-writable directory is dangerous, I would check three t
 
 This taught me an important security lesson: permissions must always match the purpose of the directory. A permission that is safe in one location can become a serious vulnerability in another.
 
----
 
 ## 2. xargs vs -exec in find: both run commands on results. What is the performance difference with 10,000 files?
 
-### Ans:
+### Answer:
 
 When I first saw find -exec and xargs, they looked like two different ways to achieve the same result. Then I learned that the performance difference becomes significant when working with thousands of files.
 
@@ -30,11 +29,10 @@ xargs works differently. It collects many filenames and passes them to a command
 
 This taught me that Linux performance is often about reducing unnecessary work. The commands may produce the same result, but the method used can dramatically affect execution time on large systems. This is why administrators often prefer xargs when processing huge numbers of files.
 
----
 
 ## 3. A junior developer says, "I'll just run everything as root, simpler." Write 3 specific real-world disasters this causes.
 
-### Ans:
+### Answer:
 
 When I first started learning Linux, running everything as root seemed convenient because permission errors disappeared. Then I realized those permission checks exist to prevent catastrophic mistakes.
 
@@ -46,11 +44,11 @@ The third disaster is configuration corruption. A simple typo while editing file
 
 This taught me that the principle of least privilege is one of the most important ideas in cybersecurity. Users and applications should have only the permissions they need, not unlimited access.
 
----
+
 
 ## 4. In AWS, a security audit tool like AWS Inspector does exactly what your script does. How would you automate this to run weekly?
 
-### Ans:
+### Answer:
 
 When I first wrote security-audit scripts, I thought running them manually was enough. Then I realized that security is not a one-time task. A system that is secure today may become vulnerable next week because of configuration changes, software updates, or newly discovered threats.
 
