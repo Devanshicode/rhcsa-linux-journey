@@ -347,6 +347,28 @@ head trace.log
 
 
 
+## Key Insights I Learned
+
+
+
+
+At first I thought process priority was something Linux handled automatically and users rarely touched it. But when I launched three sleep processes using different nice values , I realized Linux actually lets us influence which processes should get CPU attention first.
+
+
+The biggest surprise was learning that kill does not always "kill" a process. I assumed kill and terminate were the same thing. After using SIGHUP, SIGTERM and SIGKILL, I understood that signals are actually different instructions. 
+
+One thing that confused me initially was why some administrators prefer SIGTERM over SIGKILL. After reading the behavior and testing it, I realized that SIGTERM allows applications to save data and close files properly. SIGKILL should be the last option when a process becomes unresponsive.
+
+Using lsof was another eye-opener. I always thought files and network connections were separate things, but Linux treats almost everything as a file. Running lsof on nginx showed configuration files, logs and sockets all connected to the same process.
+
+
+This connects directly to real cloud , System administrators and cloud engineers use these exact techniques when troubleshooting production servers. If a web server consumes too much CPU, hangs unexpectedly, refuses to stop, or keeps a file locked, tools like ps, pstree, kill, lsof and strace help identify the root cause quickly. These are the same troubleshooting skills used on Linux servers running in AWS, Azure and enterprise data centers.
+
+
+
+
+
+
 
 
 
