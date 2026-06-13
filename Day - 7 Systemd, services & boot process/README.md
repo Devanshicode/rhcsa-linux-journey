@@ -33,6 +33,7 @@
 
 
 
+<img width="1280" height="800" alt="7 2" src="https://github.com/user-attachments/assets/5f4f7ec7-e6d8-42f3-ae6b-ae7a8717fd82" />
 
 
 
