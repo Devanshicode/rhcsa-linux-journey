@@ -2,6 +2,17 @@
 # Task - 7 Systemd Service Management: nginx Recovery + Custom Health Logger Service
 
 
+<img width="1280" height="800" alt="task 7 1" src="https://github.com/user-attachments/assets/64e5a3e5-f101-44b3-a427-08ac3fec6936" />
+
+
+
+<img width="1280" height="800" alt="task 7 2" src="https://github.com/user-attachments/assets/dace1560-e826-45d5-a26f-d08e0dd79d8d" />
+
+
+
+
+
+
 
 ## Objective 
 Install nginx. Kill it with -9 (it won't restart). Edit unit file to add Restart=on-failure RestartSec=5. Test auto-restart by killing again. Create a custom service unit for a bash health-logger script. Enable it. Verify with journalctl -u your-service -f. Write what each line of your unit file does.
