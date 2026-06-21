@@ -1,5 +1,7 @@
 
-Thinking Questions – systemd & Logging
+# Thinking Questions – systemd & Logging
+
+
 1. systemctl enable vs systemctl start
 
 When I first heard systemctl enable and systemctl start, I thought they both did the same thing because after running either command, the service seemed to work. Then I understood that they solve two completely different problems. start means "run the service right now," while enable means "automatically start the service during boot."
