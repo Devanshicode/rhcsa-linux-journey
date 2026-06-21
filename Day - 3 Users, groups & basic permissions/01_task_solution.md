@@ -1,20 +1,18 @@
 
 # Task 3: User and Group Management
 
+
+
+<img width="1280" height="800" alt="task 3" src="https://github.com/user-attachments/assets/763ceb7e-6949-441c-930c-b014953a0aeb" />
+
+
+
+
 ## Objective
 
-* Create users alice, bob, and carol
-* Create group devteam
-* Add alice and bob to devteam
-* Give alice sudo access
-* Set password policy:
+Create users alice (sudo access), bob (no sudo), carol (locked). Create group 'devteam'. Add alice and bob to devteam. Set password policy: max 60 days, warn 7 days before expiry. Lock carol. Verify by switching to each user and testing what they can and cannot do.
 
-  * Maximum age: 60 days
-  * Warning before expiry: 7 days
-* Lock carol account
-* Verify user permissions
 
----
 
 ## Step 1: Create Users
 
