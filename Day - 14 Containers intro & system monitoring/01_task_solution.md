@@ -1,5 +1,17 @@
 # Task 14 – Run Nginx in Podman Container with Monitoring
 
+
+<img width="1280" height="800" alt="task - 14" src="https://github.com/user-attachments/assets/ce386715-26ff-4030-ad6c-d1e6cf7d5d6a" />
+
+
+
+## Objective 
+Run nginx in a Podman container on port 8080. Curl it. Exec into it and add a custom index.html. Generate a systemd unit for it and enable it so it starts on boot. Monitor the container's resource usage. Set up a monitoring script that checks the container is running and restarts it if not, with logging.
+
+
+
+
+
 ## Step 1
 
 Command:
