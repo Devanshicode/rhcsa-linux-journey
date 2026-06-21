@@ -1,6 +1,14 @@
 
 # Task 1 - Backup Recently Modified Configuration Files
 
+
+
+
+<img width="1280" height="800" alt="day 1 task" src="https://github.com/user-attachments/assets/863afe0b-0575-4002-bcc4-311efd0750de" />
+
+
+
+
 ## Objective
 
 Find all `.conf` files modified in the last 3 days under `/etc`, copy them to `/tmp/audit_backup` while preserving directory structure, create a symbolic link, and count the backed-up files.
