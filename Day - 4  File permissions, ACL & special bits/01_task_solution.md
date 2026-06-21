@@ -342,3 +342,38 @@ Counts lines in the report.
 ### Purpose
 
 Shows total SUID binaries found.
+
+
+
+# Key Learning 
+
+
+At first I thought Linux permissions were only about chmod, but while working on this lab I learned that real access control is much more detailed. Setting the SGID bit on `/srv/project` ensured that every new file automatically inherited the `devteam` group, which is much easier than manually fixing group ownership every time someone creates a file. ACLs were also interesting because they allowed different access levels for different users on the same directory — `alice` could fully manage files, `bob` could only read them, and `carol` was completely blocked.
+
+The part that needed extra attention was file protection. Even if a user has permissions on a file, making `config.conf` immutable with `chattr +i` prevents accidental modification or deletion. I also noticed that the sticky bit on `/tmp/shared` changes how shared directories behave, allowing users to create files while preventing them from deleting files owned by others. Without these special permissions, shared environments can quickly become messy or insecure.
+
+The SUID audit was another eye-opener. Running a search for all SUID binaries and saving them to `/tmp/suid_audit.txt` showed how many programs run with elevated privileges. This helped me understand why security teams regularly audit SUID files—an unnecessary or misconfigured SUID binary can become a privilege-escalation risk. These are the same concepts used in enterprise Linux servers, cloud VMs, and MNC production environments where teams need controlled collaboration, secure configuration files, and regular security compliance checks.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
