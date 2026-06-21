@@ -557,17 +557,37 @@ Create release version.
 git push origin v1.0
 ```
 
----
 
-# Final Deliverables
+# Key Learning 
 
-| Deliverable        | Purpose                    |
-| ------------------ | -------------------------- |
-| server_baseline.sh | Server setup and hardening |
-| system_health.sh   | Health monitoring          |
-| backup.sh          | Backup automation          |
-| Nginx via Podman   | Web service deployment     |
-| Cron Jobs          | Task automation            |
-| SELinux Enforcing  | Security                   |
-| GitHub Repository  | Version control            |
-| v1.0 Tag           | Release management         |
+
+
+
+While building the complete RHEL Linux server, I learned that setting up a production system is much more than just installing packages. Hardening SSH, creating users, enabling SELinux, configuring cron jobs, and deploying Nginx inside a Podman container all had to work together. A server can look fine immediately after installation, but if security policies, permissions, or services are not configured correctly, it will fail in real usage.
+
+One thing that caught my attention was how many services depend on each other. After writing the baseline script, some changes did not take effect until the related service was restarted. The Podman-based Nginx deployment also required proper port mapping and firewall configuration before the custom web page became accessible. SELinux enforcement was another important lesson because a service may work perfectly when SELinux is permissive but fail once enforcing mode is enabled.
+
+I also ran into issues with automation. Cron jobs were not running as expected at first because of incorrect paths and execution permissions. Backup rotation needed careful testing because old backups were either not being removed or too many files were being deleted. The health-check script required additional checks to correctly report CPU, memory, disk usage, and service status without generating misleading output.
+
+This task closely reflects real cloud and MNC environments. System administrators and cloud engineers regularly build baseline server configurations, automate health monitoring, schedule backups, enforce security policies, deploy containerized applications, and maintain everything through version control systems like Git and GitHub. Tagging the project as v1.0 is similar to how production-ready infrastructure code is versioned and released in professional DevOps workflows.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
