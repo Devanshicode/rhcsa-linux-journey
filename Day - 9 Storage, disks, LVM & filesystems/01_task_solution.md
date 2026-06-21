@@ -4,8 +4,12 @@
 
 
 
+<img width="1280" height="800" alt="task - 9 1" src="https://github.com/user-attachments/assets/96b263a8-8fda-4a32-bd62-00a3559c7719" />
 
 
+
+
+<img width="1280" height="800" alt="task - 9 2" src="https://github.com/user-attachments/assets/e9a41d10-ed94-4b3f-9928-c276252419fd" />
 
 
 
