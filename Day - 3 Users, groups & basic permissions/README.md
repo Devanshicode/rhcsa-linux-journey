@@ -3,6 +3,11 @@
 
 
 
+<img width="1280" height="800" alt="3" src="https://github.com/user-attachments/assets/ec6b8ad1-ab15-441b-8a46-e3898d31ed81" />
+
+
+
+<img width="1280" height="800" alt="3 1" src="https://github.com/user-attachments/assets/a9ef48de-c108-4da5-be84-07f4894830b6" />
 
 
 
@@ -26,6 +31,8 @@
 
 
 
+<img width="1280" height="800" alt="3 2" src="https://github.com/user-attachments/assets/0e5cc471-313a-40c2-94cc-ef134be94539" />
+
 
 
 
@@ -42,6 +49,10 @@
 
 # Group - 3 Linux User & Security Administration
 
+
+
+
+<img width="1280" height="800" alt="3 3" src="https://github.com/user-attachments/assets/fca9c90e-c450-4a89-aaae-2ec9b77ab3bd" />
 
 
 
@@ -62,6 +73,8 @@
 
 
 
+
+<img width="1280" height="800" alt="3 4" src="https://github.com/user-attachments/assets/15904e25-27a4-4da5-a37b-c84af33bf318" />
 
 
 
