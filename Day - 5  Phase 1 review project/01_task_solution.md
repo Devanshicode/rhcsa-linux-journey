@@ -1,15 +1,20 @@
 
 # Task 5 - Phase 1 Capstone Security Audit
 
+
+
+
+<img width="1280" height="800" alt="task - 5 1" src="https://github.com/user-attachments/assets/a087b304-1d4e-47e7-85f2-3e966e93cd40" />
+
+
+
+
+<img width="1280" height="800" alt="task - 5 2" src="https://github.com/user-attachments/assets/a651dfd5-d7c7-496a-8c90-77f3aa8e4a4f" />
+
+
+
 ## Objective
-
-Perform a complete server security audit and save the results in:
-
-```bash
-/tmp/server_audit_report.txt
-```
-
----
+Phase 1 capstone: You are given a new server. Perform a full security audit: (1) List all users with UID>999. (2) Find all files with SUID. (3) Find world-writable directories. (4) Check all users' last login. (5) Find .conf files modified in last 7 days. Output everything to /tmp/server_audit_report.txt with section headers.
 
 ## Step 1: Create Report File
 
