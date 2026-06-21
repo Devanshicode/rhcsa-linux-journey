@@ -1,22 +1,18 @@
 
 # Task 2 - Analyze SSH Login Threats
 
+
+
+
+<img width="1280" height="800" alt="day 2 task" src="https://github.com/user-attachments/assets/42b76b63-551d-495e-aebe-26ed285a877f" />
+
+
+
+
+
 ## Objective
+Analyze /var/log/secure. Find all failed SSH login IPs, count occurrences, rank by frequency. Extract all targeted usernames. Output a ranked report to /tmp/ssh_threat_report.txt. Use only grep, awk, sort, uniq — no Python.
 
-Analyze `/var/log/secure` to identify:
-
-* Failed SSH login attempts
-* Source IP addresses
-* Frequency of attacks per IP
-* Usernames targeted by attackers
-
-Generate a ranked report and save it to:
-
-```bash
-/tmp/ssh_threat_report.txt
-```
-
----
 
 ## Step 1: Verify Log File
 
