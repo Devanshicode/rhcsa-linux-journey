@@ -433,17 +433,38 @@ sudo auditctl -l
 
 Confirm auditing rule is active.
 
----
 
-# Summary
 
-This lab improved web server security by:
+# Key Learning
 
-1. Blocking root SSH logins.
-2. Disabling password authentication.
-3. Installing Fail2Ban to block brute-force attacks.
-4. Disabling unnecessary services.
-5. Configuring SELinux correctly for nginx.
-6. Monitoring all changes to `/etc/passwd` using Auditd.
 
-The overall goal is to reduce attack surface, improve monitoring, and follow security best practices for production Linux servers.
+
+At first, I thought hardening a web server would mostly be about installing security tools, but I learned that security is built in layers. After changing `PermitRootLogin no` and `PasswordAuthentication no` in `sshd_config`, I realized that SSH access can be completely blocked if key-based authentication is not tested beforehand. This showed me why administrators always verify access before restarting the SSH service.
+
+While configuring Fail2Ban, I expected it to start protecting the server immediately after installation. Instead, I had to create and verify the jail configuration so it could actually detect repeated failed login attempts and ban suspicious IP addresses. Disabling unnecessary services was also more important than I expected because every running service increases the system's attack surface, even if nobody is actively using it.
+
+The SELinux part taught me the biggest lesson. Nginx could not serve files from `/srv/webapp/` even though file permissions looked correct. The issue was the SELinux context, not the Linux permissions. After assigning the correct context and restoring labels, Nginx was able to access the content properly. I also configured `auditd` to monitor all write operations on `/etc/passwd`, which helped me understand how administrators track sensitive system changes and investigate security incidents.
+
+This task felt very similar to what cloud and enterprise teams do in production environments. Before deploying applications on AWS, Azure, or private cloud servers, engineers harden SSH access, deploy intrusion-prevention tools like Fail2Ban, reduce unnecessary services, enforce SELinux policies, and enable auditing for critical files. These controls are part of standard security baselines followed in MNCs to meet compliance requirements and protect production systems from unauthorized access.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
