@@ -1,8 +1,9 @@
 
-# Group - 1 SELinux Monitoring
+# Group - 1  SELinux Monitoring
 
 
 
+<img width="1280" height="800" alt="13 1" src="https://github.com/user-attachments/assets/8f82d08d-7645-4cc3-ba38-18acf9b247d6" />
 
 
 
@@ -22,6 +23,7 @@
 
 
 
+<img width="1280" height="800" alt="13 2" src="https://github.com/user-attachments/assets/70359439-4785-4b51-8aa3-6884bd81db95" />
 
 
 
@@ -42,6 +44,7 @@
 
 
 
+<img width="1280" height="800" alt="13 3" src="https://github.com/user-attachments/assets/ab85ea7f-de36-459b-b674-9fcd13bb234c" />
 
 
 
@@ -66,6 +69,7 @@
 
 
 
+<img width="1280" height="800" alt="13 4" src="https://github.com/user-attachments/assets/e78b434c-d30b-4c59-97f6-ea8909bda6be" />
 
 
 
