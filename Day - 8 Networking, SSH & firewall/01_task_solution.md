@@ -4,6 +4,8 @@
 
 
 
+<img width="1280" height="800" alt="task 8 1" src="https://github.com/user-attachments/assets/3792e159-e6b1-4656-ad52-69bd41a06df6" />
+
 
 
 
