@@ -3,6 +3,10 @@
 
 
 
+<img width="1280" height="800" alt="5 1" src="https://github.com/user-attachments/assets/3a3a40e6-9249-45b0-bff9-0d91abb63bac" />
+
+
+
 
 | Command             | What it does                                       | When I use it                                                                            |
 | ------------------- | -------------------------------------------------- | ---------------------------------------------------------------------------------------- |
@@ -18,6 +22,9 @@
 # Group - 2 Linux Command Toolkit Essentials
 
 
+
+
+<img width="1280" height="800" alt="5 2" src="https://github.com/user-attachments/assets/abaae251-c68b-4ff8-a50c-f2eff1d2cf51" />
 
 
 
@@ -40,6 +47,9 @@
 
 
 
+<img width="1280" height="800" alt="5 3" src="https://github.com/user-attachments/assets/8b9cfef5-67d9-4512-94aa-d13328f874db" />
+
+
 
 
 | Command                            | What it does                                                    | When you use it                                                           |
@@ -59,6 +69,8 @@
 
 
 
+
+<img width="1280" height="800" alt="5 4" src="https://github.com/user-attachments/assets/daa3ed5f-8ad1-4d38-9216-086a584678c2" />
 
 
 
