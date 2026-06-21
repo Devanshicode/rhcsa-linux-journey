@@ -137,11 +137,35 @@ Displays the total number of configuration files backed up.
 
 ---
 
-## Final Verification
 
-```bash
-find /tmp/audit_backup -type f | wc -l
-ls -l /root/latest_audit
-```
 
-These commands verify the backup count and symbolic link configuration.
+# Key Learning 
+
+I had to find all .conf files that were changed in the last 3 days inside /etc and back them up. While copying them, I learned that using cp --parents is very important because it keeps the original directory structure intact. Instead of placing every configuration file into a single folder, it recreated the same path inside /tmp/audit_backup. For example, a file from /etc/ssh/ was copied into /tmp/audit_backup/etc/ssh/, making it much easier to identify where each configuration file originally came from.
+
+While performing the backup, I noticed that the destination directory had to exist before copying files; otherwise, the command would fail. I also had to make sure the find command was correctly filtering only .conf files modified within the last 3 days. After the backup was completed, I verified the result by counting the files with find | wc -l and then created a symbolic link pointing to the backup location so it could be accessed quickly from /root/latest_audit.
+
+This task is very similar to what system administrators and cloud engineers do in production environments. Before applying updates, patching servers, or modifying application settings on cloud instances, configuration files are often backed up while preserving their directory structure. The symbolic link provides a fixed location for the latest backup, and counting the files helps verify that the backup process completed successfully. These are common practices in automated maintenance and disaster-recovery workflows used in enterprise and cloud environments.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
