@@ -298,5 +298,41 @@ podman ps
 
 Explanation: Stops container, runs monitoring script, and verifies restart.
 
+
+
+
+# Key Learnings 
+
+
+
+
+At first I thought running Nginx inside Podman would be almost the same as installing Nginx directly on the server. After creating the container and mapping port 8080, I realized the web server was completely isolated inside the container and only became accessible after the correct port mapping was configured. Using curl on localhost:8080 was a quick way to verify that the service was actually reachable from outside the container.
+
+When I entered the container using podman exec, I expected changes to the web page to appear immediately. The custom index.html worked, but I learned that container changes can disappear if the container is removed and recreated. Because of that, I had to pay attention to how containers are managed rather than treating them like normal virtual machines. Generating a systemd unit was also something new for me because simply starting the container manually was not enough. Without enabling the generated service, the container would not automatically start after a reboot.
+
+Monitoring was another interesting part. The container looked healthy when checked manually, but I learned that services can stop unexpectedly. Using Podman resource monitoring showed CPU and memory usage in real time, while the monitoring script continuously checked whether the container was running. If the container stopped, the script restarted it automatically and recorded the event in a log file. This made the setup much more reliable.
+
+This is very similar to real cloud and MNC environments where applications are commonly deployed in containers instead of directly on servers. Containers are monitored, automatically restarted when failures occur, and integrated with system services so they survive reboots. The monitoring and self-healing approach used here follows the same operational practices used in production environments to reduce downtime and keep services available.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Purpose: Tests automatic recovery functionality.
 
