@@ -135,3 +135,33 @@ cat /tmp/ssh_threat_report.txt
 ### Purpose
 
 Display the final SSH threat report.
+
+
+
+# Key Learning
+
+At first I thought finding failed SSH logins would be as simple as grepping for "Failed password" lines. But once I started analyzing `/var/log/secure`, I realized the real challenge was extracting useful information from those logs. Using `grep`, `awk`, `sort`, and `uniq`, I was able to pull out the source IP addresses, count how many times each IP appeared, rank them by frequency, and also list all usernames that attackers were trying to access. The final report was saved into `/tmp/ssh_threat_report.txt` in a clean, readable format.
+
+One thing I noticed is that log files are not structured the same way as normal data files. The position of the IP address and username in the log line mattered a lot. My first extraction attempts returned incorrect values because I was targeting the wrong fields with `awk`. After checking the actual log format and adjusting the field numbers, the counts and usernames started appearing correctly. Sorting before running `uniq -c` was also necessary; otherwise duplicate IPs were not counted properly.
+
+This task showed me how security teams quickly identify suspicious login activity without using advanced tools or scripts. In cloud environments such as AWS EC2, Azure VMs, or production Linux servers in MNCs, administrators often analyze authentication logs to detect brute-force attacks, identify the most aggressive source IPs, and discover which accounts attackers are targeting. The same grep–awk–sort–uniq workflow is commonly used during security investigations, incident response, and routine server monitoring.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
