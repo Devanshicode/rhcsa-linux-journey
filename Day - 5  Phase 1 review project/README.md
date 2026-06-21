@@ -8,6 +8,11 @@
 
 
 
+<img width="1280" height="800" alt="5" src="https://github.com/user-attachments/assets/556b4ccb-30de-4173-9600-5e67117243c7" />
+
+
+
+
 | Command             | What it does                                       | When I use it                                                                            |
 | ------------------- | -------------------------------------------------- | ---------------------------------------------------------------------------------------- |
 | `find + grep + awk` | Chains file search, filtering, and text processing | When I need to search and extract specific files or text patterns from large directories |
