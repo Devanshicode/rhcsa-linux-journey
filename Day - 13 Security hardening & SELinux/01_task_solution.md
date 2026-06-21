@@ -1,11 +1,19 @@
 
 # Task 13 - Harden a Web Server
 
+
+
+<img width="1280" height="800" alt="task - 13 1" src="https://github.com/user-attachments/assets/e1b66792-68f3-4e28-ae8a-b5e18eb99aef" />
+
+
+
+
 ## Objective
 
-Secure a Linux web server by restricting SSH access, enabling intrusion protection, reducing attack surface, configuring SELinux correctly, and monitoring critical system files.
+Harden a web server: (1) Set PermitRootLogin no, PasswordAuthentication no in sshd_config. (2) Install fail2ban and configure. (3) Disable 3 unneeded services. (4) Fix SELinux context so nginx can serve from /srv/webapp/. (5) Set up auditd to log all writes to /etc/passwd. (6) Document every change and why.
 
----
+
+
 
 # Step 1 - Disable Root Login and Password Authentication
 
