@@ -2,7 +2,12 @@
 # Group - 1 Linux Process Control
 
 
+<img width="1280" height="800" alt="6 1 1" src="https://github.com/user-attachments/assets/a4dc3eed-dea9-48eb-b5db-4be20647f816" />
 
+
+
+
+<img width="1280" height="800" alt="6 1" src="https://github.com/user-attachments/assets/b64a6f66-ce00-4025-9354-7662e7e0f05f" />
 
 
 
@@ -25,6 +30,9 @@
 
 
 
+<img width="1280" height="800" alt="6 2" src="https://github.com/user-attachments/assets/5682d90e-9d75-4d14-9b90-57d87422a787" />
+
+
 
 
 | Command          | What it does                                   | When I use it                                                |
@@ -43,6 +51,8 @@
 
 
 
+
+<img width="1280" height="800" alt="6 3" src="https://github.com/user-attachments/assets/cc93891e-083d-4585-95dc-e046c086f7de" />
 
 
 
@@ -66,6 +76,8 @@
 
 
 
+
+<img width="1280" height="800" alt="6 4" src="https://github.com/user-attachments/assets/fe9603b4-f993-4672-a139-ccf415902877" />
 
 
 
