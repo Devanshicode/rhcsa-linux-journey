@@ -2,24 +2,12 @@
 # Task 15 – Production Ready RHEL Linux Server
 
 
+<img width="1280" height="800" alt="TASK 15 1" src="https://github.com/user-attachments/assets/b3748add-6f48-484c-bc5b-127fc9f11323" />
 
 
 
 ## Objective
-
-Build a complete production-ready server from a fresh Rocky Linux installation.
-
-### Deliverables
-
-* server_baseline.sh
-* system_health.sh
-* backup.sh
-* Nginx deployed using Podman
-* Cron automation
-* SELinux Enforcing
-* GitHub repository with v1.0 tag
-
----
+Build a complete production-ready server from a fresh Rocky Linux install. Deliverables: (1) server_baseline.sh — hardens SSH, installs packages, sets up users. (2) system_health.sh — reports disk, memory, CPU, service status. (3) backup.sh — automated backup with rotation. (4) Deploy nginx serving custom page via Podman. (5) All scripts wired to cron. (6) SELinux Enforcing. Push everything to GitHub and tag v1.0.
 
 # Step 1: Update System
 
