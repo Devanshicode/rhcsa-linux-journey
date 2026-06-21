@@ -2,6 +2,11 @@
 # Group - 1 Linux Backup, Synchronization
 
 
+<img width="1280" height="800" alt="12 1" src="https://github.com/user-attachments/assets/5dda9155-d71a-4e27-bec5-4ef117a53658" />
+
+
+
+<img width="1280" height="800" alt="12 1 1" src="https://github.com/user-attachments/assets/737580e2-99a0-4d05-bbb7-3136b764a079" />
 
 
 
@@ -27,7 +32,11 @@
 
 
 
+<img width="1280" height="800" alt="12 2 1" src="https://github.com/user-attachments/assets/5507b0a1-313a-47ea-9e9c-4e48ebc6daaa" />
 
+
+
+<img width="1280" height="800" alt="12 2" src="https://github.com/user-attachments/assets/53f94976-6129-4b64-9e50-32e1f9a1a3d9" />
 
 
 
@@ -53,6 +62,7 @@
 
 
 
+<img width="1280" height="800" alt="12 3" src="https://github.com/user-attachments/assets/31ab14e5-406a-4493-b84c-07b78f5c9813" />
 
 
 
@@ -78,6 +88,7 @@
 
 
 
+<img width="1280" height="800" alt="12 4" src="https://github.com/user-attachments/assets/600e424a-95fd-404a-be24-0982c9707a43" />
 
 
 
