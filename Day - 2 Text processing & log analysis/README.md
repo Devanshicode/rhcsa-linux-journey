@@ -4,6 +4,12 @@
 
 
 
+<img width="1280" height="800" alt="2" src="https://github.com/user-attachments/assets/dc65ed93-69ea-4695-bc79-6c729a69d4d3" />
+
+
+
+<img width="1280" height="800" alt="2 1" src="https://github.com/user-attachments/assets/78495e24-63e1-4735-9f1d-3a708a61abb9" />
+
 
 
 
@@ -27,6 +33,12 @@
 
 
 
+<img width="1280" height="800" alt="2 2" src="https://github.com/user-attachments/assets/78e6b531-a116-47ff-abb2-92323a885172" />
+
+
+
+
+
 | Command                    | What it does                                       | When I use it                                                   |
 | -------------------------- | -------------------------------------------------- | --------------------------------------------------------------- |
 | `sed -n '10,20p' file`     | Displays only specific line range from a file      | When I want to view selected lines (like logs or code sections) |
@@ -43,6 +55,9 @@
 # Group - 3 Linux Text Processing & File Analysis Commands
 
 
+
+
+<img width="1280" height="800" alt="2 3" src="https://github.com/user-attachments/assets/8807e8ba-7f6c-4fa9-ad75-2762acfb0a9e" />
 
 
 
@@ -63,6 +78,9 @@
 
 
 
+
+
+<img width="1280" height="800" alt="2 4" src="https://github.com/user-attachments/assets/011432d5-1470-4548-be1f-13d792b6e04d" />
 
 
 
