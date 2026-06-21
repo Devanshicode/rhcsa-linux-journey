@@ -572,28 +572,37 @@ Expected Output:
 Sat Jun 21 12:00:01 IST 2026 : Health Check Running
 ```
 
----
 
-# Final Verification Commands
 
-```bash
-sudo systemctl status nginx
 
-sudo systemctl show nginx | grep Restart
+# Key Learning
 
-sudo systemctl status health-logger.service
 
-sudo journalctl -u health-logger.service -f
+When working with systemd services, I first thought that if nginx crashed, the system would automatically bring it back. After installing nginx and killing the process using `kill -9`, I noticed that nginx stayed completely stopped because a SIGKILL signal gives the application no chance to shut down cleanly. That helped me understand the difference between a normal service failure and a forcefully terminated process.
 
-cat /var/log/health.log
-```
+While modifying the service configuration, I learned that systemd behavior is controlled through directives inside the unit file. Adding `Restart=on-failure` and `RestartSec=5` made the service automatically restart after a failure, but only after waiting five seconds. After reloading systemd and testing again, nginx restarted on its own, which confirmed that the restart policy was working correctly.
 
-# Expected Results
+Creating a custom health-logger service showed me that systemd can manage much more than standard packages. A simple Bash script can be converted into a managed service by creating a custom unit file, defining how the script starts, and enabling it. Watching logs with `journalctl -u your-service -f` was especially useful because it displayed live output directly from the service, making troubleshooting much easier.
 
-* Nginx installed successfully.
-* Nginx automatically restarts after kill -9.
-* Restart delay is 5 seconds.
-* Health logger service created successfully.
-* Service enabled at boot.
-* Logs visible through journalctl.
-* Log entries written to /var/log/health.log.
+The unit file became much clearer once I understood what each line does. `[Unit]` contains service metadata and dependencies, `[Service]` defines how the script runs, `ExecStart=` specifies the command to execute, `Restart=` controls restart behavior, `RestartSec=` sets the delay before restarting, and `[Install]` determines how the service is enabled during system boot.
+
+This is very similar to production cloud environments where services must recover automatically from failures without manual intervention. Restart policies, custom monitoring services, and centralized logging through systemd are common practices on Linux servers running in cloud platforms, containers, and enterprise infrastructure. These mechanisms help maintain uptime and allow operations teams to quickly diagnose issues through logs instead of manually checking every process.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
