@@ -245,3 +245,37 @@ devteam:x:1003:alice,bob
 Purpose:
 
 * Confirms alice and bob are members of devteam
+
+
+
+# Key Learning
+
+
+At first I thought creating users was just about running useradd and setting passwords. But while testing, I realized Linux user management is much more than account creation. Adding alice and bob to the devteam group showed how permissions can be managed for multiple users at once instead of configuring access individually. I also learned that sudo privileges are completely separate from normal user accounts, so alice could perform administrative tasks while bob was restricted to regular user operations.
+
+When I started verifying access, I noticed that simply creating a user does not guarantee the expected behavior. I had to check group membership, confirm sudo access for alice, and verify that bob could not execute privileged commands. For carol, locking the account prevented login access, which helped me understand the difference between a user existing on the system and being allowed to authenticate. Testing with su was important because it exposed configuration mistakes immediately instead of assuming everything was correct.
+
+The password aging policy was another thing I had not paid much attention to before. Setting a maximum password age of 60 days and warning users 7 days before expiration showed me how organizations enforce security policies. Without verification using chage, it would have been easy to think the policy was applied when it actually was not. This taught me that validation is just as important as configuration.
+
+This is very similar to what happens in cloud environments and large companies. System administrators regularly create users, assign them to groups, control administrative privileges, enforce password policies, and disable accounts when employees leave a project. The same concepts are used on Linux servers running in AWS, Azure, and enterprise data centers to maintain security, compliance, and proper access control.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
