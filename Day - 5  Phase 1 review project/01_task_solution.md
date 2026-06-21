@@ -155,3 +155,40 @@ Verify audit results.
 ```bash
 /tmp/server_audit_report.txt
 ```
+
+
+# Key Learning 
+
+
+When I worked on the server audit task, I learned that collecting security information from different parts of the system is much easier when everything is redirected into a single report file. Using commands like `/etc/passwd` filtering for UID greater than 999, checking SUID files, world-writable directories, last login records, and recently modified `.conf` files gave me a complete picture of the server's security state in one place instead of checking each item separately on the screen.
+
+One thing that stood out was how much information a Linux system already stores. The `lastlog` command immediately showed login history for every user, while `find` revealed dozens of SUID files and writable directories that I normally never notice during daily administration. I also realized that using clear section headers inside the report makes the output much easier to read and troubleshoot later.
+
+While generating the report, permission-related messages could easily mix with the actual audit results and make the report difficult to understand. Redirecting unwanted error messages with `2>/dev/null` helped keep the report clean and focused only on useful security findings. Proper output redirection was also important because using `>` and `>>` incorrectly could overwrite previous sections of the report.
+
+This is very similar to real cloud and MNC environments where system administrators and DevOps engineers perform regular security audits on Linux servers, EC2 instances, and virtual machines. Instead of manually checking hundreds of systems, automated audit scripts generate structured reports that help teams identify risky permissions, unexpected user accounts, suspicious SUID files, and configuration changes before they become security incidents.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
