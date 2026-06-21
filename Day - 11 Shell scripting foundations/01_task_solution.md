@@ -1,7 +1,17 @@
 
 # Task - 11: User Provisioning Script
 
-Step 1: Become Root User
+
+<img width="1280" height="800" alt="task - 11" src="https://github.com/user-attachments/assets/c4f4dd13-f37c-4ca7-a6b5-909b4b9c6059" />
+
+
+
+
+## Objective 
+Write a user-provisioning script: takes arguments -u username -g groupname. Creates user, sets temp password, adds to group, sets password expiry 30 days, creates home dir structure (projects/ logs/ scripts/), logs all actions. Run it for 3 users in a for loop. Run shellcheck on it.
+
+
+## Step 1: Become Root User
 
 Command:
 sudo -i
@@ -14,9 +24,9 @@ Explanation:
 Purpose:
 Gain administrative privileges required for user management.
 
----
 
-Step 2: Create Working Directory
+
+## Step 2: Create Working Directory
 
 Command:
 mkdir -p /root/task11
@@ -31,9 +41,9 @@ Explanation:
 Purpose:
 Create a dedicated workspace.
 
----
 
-Step 3: Create Script File
+
+## Step 3: Create Script File
 
 Command:
 vi user_provision.sh
@@ -46,9 +56,9 @@ Explanation:
 Purpose:
 Create the provisioning script.
 
----
 
-Step 4: Add Script Content
+
+## Step 4: Add Script Content
 
 Paste:
 
@@ -93,9 +103,9 @@ echo "[$(date)] User $USERNAME created successfully" >> $LOGFILE
 Purpose:
 Automates user creation, group assignment, password setup, directory creation, password expiry policy, and logging.
 
----
 
-Step 5: Make Script Executable
+
+## Step 5: Make Script Executable
 
 Command:
 chmod +x user_provision.sh
@@ -108,9 +118,9 @@ Explanation:
 Purpose:
 Allow script execution.
 
----
 
-Step 6: Run Script for One User
+
+## Step 6: Run Script for One User
 
 Command:
 ./user_provision.sh -u alice -g developers
@@ -123,9 +133,9 @@ Explanation:
 Purpose:
 Create a user account.
 
----
 
-Step 7: Run Script for 3 Users Using For Loop
+
+## Step 7: Run Script for 3 Users Using For Loop
 
 Command:
 for user in alice bob charlie
@@ -141,9 +151,9 @@ Explanation:
 Purpose:
 Create multiple users automatically.
 
----
 
-Step 8: Verify Users
+
+## Step 8: Verify Users
 
 Command:
 cat /etc/passwd | grep -E "alice|bob|charlie"
@@ -151,9 +161,9 @@ cat /etc/passwd | grep -E "alice|bob|charlie"
 Purpose:
 Confirm user creation.
 
----
 
-Step 9: Verify Group Membership
+
+## Step 9: Verify Group Membership
 
 Command:
 id alice
@@ -161,9 +171,9 @@ id alice
 Purpose:
 Check assigned groups.
 
----
 
-Step 10: Verify Password Expiry
+
+## Step 10: Verify Password Expiry
 
 Command:
 chage -l alice
@@ -171,9 +181,9 @@ chage -l alice
 Purpose:
 Confirm 30-day password expiration policy.
 
----
 
-Step 11: Verify Home Directory Structure
+
+##Step 11: Verify Home Directory Structure
 
 Command:
 ls -l /home/alice
@@ -181,9 +191,8 @@ ls -l /home/alice
 Purpose:
 Verify projects/, logs/, and scripts/ directories.
 
----
 
-Step 12: Verify Logs
+## Step 12: Verify Logs
 
 Command:
 cat /var/log/user_provision.log
@@ -191,9 +200,9 @@ cat /var/log/user_provision.log
 Purpose:
 Review provisioning activity logs.
 
----
 
-Step 13: Install ShellCheck
+
+## Step 13: Install ShellCheck
 
 Command:
 dnf install epel-release -y
@@ -202,9 +211,9 @@ dnf install ShellCheck -y
 Purpose:
 Install shell script analyzer.
 
----
 
-Step 14: Run ShellCheck
+
+## Step 14: Run ShellCheck
 
 Command:
 shellcheck user_provision.sh
