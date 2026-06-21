@@ -4,6 +4,11 @@
 
 
 
+<img width="1280" height="800" alt="7 1 1" src="https://github.com/user-attachments/assets/633ea864-670d-42bf-a9e9-d9e8cdd8884f" />
+
+
+
+<img width="1280" height="800" alt="7 1" src="https://github.com/user-attachments/assets/58213bfc-2b34-415c-99cc-92e7e3873abb" />
 
 
 
@@ -25,6 +30,13 @@
 
 
 
+<img width="1280" height="800" alt="7 2" src="https://github.com/user-attachments/assets/d586e147-e636-4c18-98a8-160234a92c83" />
+
+
+
+
+
+
 
 | Command                           | What it does                                                              | When I use it                                                                |
 | --------------------------------- | ------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
@@ -42,6 +54,14 @@
 
 
 
+
+<img width="1280" height="800" alt="7 3 1" src="https://github.com/user-attachments/assets/770e0231-a92c-4b30-88be-11b18fffd8c6" />
+
+
+
+
+
+<img width="1280" height="800" alt="7 3 2" src="https://github.com/user-attachments/assets/a9467525-a355-4f3d-a34d-377dee0c066b" />
 
 
 
@@ -71,6 +91,8 @@
 
 
 
+
+<img width="1280" height="800" alt="7 4" src="https://github.com/user-attachments/assets/b0e01646-9ae1-4de3-a414-b4b43d6f5b0e" />
 
 
 
