@@ -1,7 +1,24 @@
 
 # Task - 6: Process Management, Signals, lsof and strace
 
-Step 1: Start three background processes with different priorities
+
+
+
+<img width="1280" height="800" alt="task 6 1" src="https://github.com/user-attachments/assets/7456ab31-1dc4-4477-a67e-1b80c916a7bb" />
+
+
+
+
+<img width="1280" height="800" alt="task 6 2" src="https://github.com/user-attachments/assets/ab203d06-9c42-469b-ace3-b6fd6d9e0090" />
+
+
+
+
+## Objective
+Start 3 background sleep processes with different priorities (nice levels 0, 5, 15). Identify them with pstree and ps. Send SIGHUP to one (simulate reload). Kill one with SIGTERM, one with SIGKILL. Use lsof to find what files nginx has open. Use strace to see what system calls a simple ls makes.
+
+
+## Step 1: Start three background processes with different priorities
 Command:
 sleep 300 &
 nice -n 5 sleep 300 &
@@ -16,9 +33,9 @@ nice -n 15 → Starts process with nice value 15.
 Purpose:
 Create processes with different CPU scheduling priorities.
 
---------------------------------------------------
 
-Step 2: View background jobs
+
+## Step 2: View background jobs
 Command:
 jobs -l
 
@@ -29,9 +46,9 @@ jobs → Lists shell background jobs.
 Purpose:
 Identify process IDs.
 
---------------------------------------------------
 
-Step 3: Verify nice levels
+
+## Step 3: Verify nice levels
 Command:
 ps -eo pid,ni,cmd | grep sleep
 
@@ -47,9 +64,8 @@ grep sleep → Filter sleep processes.
 Purpose:
 Verify nice levels 0, 5 and 15.
 
---------------------------------------------------
 
-Step 4: View process tree
+## Step 4: View process tree
 Command:
 pstree -p
 
@@ -60,9 +76,9 @@ pstree → Displays process hierarchy.
 Purpose:
 View parent-child process relationships.
 
---------------------------------------------------
 
-Step 5: Send SIGHUP
+
+## Step 5: Send SIGHUP
 Command:
 kill -SIGHUP <PID>
 
@@ -73,9 +89,8 @@ kill → Sends signal.
 Purpose:
 Simulate configuration reload signal.
 
---------------------------------------------------
 
-Step 6: Verify process
+## Step 6: Verify process
 Command:
 ps -p <PID>
 
@@ -85,9 +100,9 @@ Explanation:
 Purpose:
 Check process status.
 
---------------------------------------------------
 
-Step 7: Gracefully terminate process
+
+## Step 7: Gracefully terminate process
 Command:
 kill -SIGTERM <PID>
 
@@ -97,9 +112,8 @@ SIGTERM → Signal 15.
 Purpose:
 Request normal process termination.
 
---------------------------------------------------
 
-Step 8: Verify termination
+## Step 8: Verify termination
 Command:
 ps -p <PID>
 
@@ -109,9 +123,9 @@ Checks if process still exists.
 Purpose:
 Confirm graceful shutdown.
 
---------------------------------------------------
 
-Step 9: Force kill process
+
+## Step 9: Force kill process
 Command:
 kill -SIGKILL <PID>
 
@@ -122,9 +136,9 @@ Immediately terminates process.
 Purpose:
 Forcefully stop process.
 
---------------------------------------------------
 
-Step 10: Verify force kill
+
+## Step 10: Verify force kill
 Command:
 ps -p <PID>
 
@@ -134,9 +148,9 @@ Checks if PID still exists.
 Purpose:
 Confirm process removal.
 
---------------------------------------------------
 
-Step 11: Verify nginx service
+
+## Step 11: Verify nginx service
 Command:
 sudo systemctl status nginx
 
@@ -148,9 +162,9 @@ nginx → Web server service.
 Purpose:
 Ensure nginx is running.
 
---------------------------------------------------
 
-Step 12: Install lsof
+
+## Step 12: Install lsof
 Command:
 sudo dnf install lsof -y
 
@@ -163,9 +177,8 @@ lsof → List open files.
 Purpose:
 Install lsof utility.
 
---------------------------------------------------
 
-Step 13: View nginx open files
+## Step 13: View nginx open files
 Command:
 sudo lsof -c nginx
 
@@ -176,9 +189,9 @@ lsof → Lists open files.
 Purpose:
 Display files, logs and sockets used by nginx.
 
---------------------------------------------------
 
-Step 14: Install strace
+
+## Step 14: Install strace
 Command:
 sudo dnf install strace -y
 
@@ -188,9 +201,9 @@ strace → System call tracing utility.
 Purpose:
 Install tracing tool.
 
---------------------------------------------------
 
-Step 15: Trace ls system calls
+
+## Step 15: Trace ls system calls
 Command:
 strace ls
 
@@ -201,9 +214,9 @@ ls → List directory contents.
 Purpose:
 Observe kernel interactions made by ls.
 
---------------------------------------------------
 
-Step 16: Save trace output
+
+## Step 16: Save trace output
 Command:
 strace -o ls_trace.txt ls
 
@@ -213,9 +226,9 @@ Explanation:
 Purpose:
 Store trace results.
 
---------------------------------------------------
 
-Step 17: View saved trace
+
+## Step 17: View saved trace
 Command:
 cat ls_trace.txt
 
