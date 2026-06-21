@@ -1,5 +1,5 @@
 
-Task - 6: Process Management, Signals, lsof and strace
+# Task - 6: Process Management, Signals, lsof and strace
 
 Step 1: Start three background processes with different priorities
 Command:
