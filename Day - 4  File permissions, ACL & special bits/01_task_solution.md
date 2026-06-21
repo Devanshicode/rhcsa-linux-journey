@@ -1,6 +1,18 @@
 
 # Task 4 - Full Permission Lab
 
+
+
+<img width="1280" height="800" alt="task 4" src="https://github.com/user-attachments/assets/dbc53bc0-d27d-4185-9cf1-070d41130b3d" />
+
+
+
+
+## Objective 
+Full permission lab: Create /srv/project with SGID so all new files inherit group 'devteam'. alice has full access, bob has read-only via ACL, carol has NO access. Make config.conf immutable. Set sticky bit on /tmp/shared. Find all SUID binaries on the system and save list to /tmp/suid_audit.txt.
+
+
+
 ## Step 1: Create Group
 
 ### Command
