@@ -1,8 +1,10 @@
 
-# Groupp - 1 Networking & Remote Access Commands
+# Group - 1 Networking & Remote Access Commands
 
 
 
+
+<img width="1280" height="800" alt="8 1" src="https://github.com/user-attachments/assets/85041db2-3711-47a8-8a04-14c9873302ce" />
 
 
 
@@ -28,6 +30,8 @@
 
 
 
+<img width="1280" height="800" alt="8 2" src="https://github.com/user-attachments/assets/7e9a8b5c-3e08-460d-bd37-369c3c73ebe2" />
+
 
 
 
@@ -49,6 +53,8 @@
 
 
 
+
+<img width="1280" height="800" alt="8 3" src="https://github.com/user-attachments/assets/b0013192-cd05-431c-9be6-a36f4963151f" />
 
 
 
@@ -76,6 +82,8 @@
 
 
 
+
+<img width="1280" height="800" alt="8 4" src="https://github.com/user-attachments/assets/f9a7e795-fdcd-4e48-9d17-0dc6b4fad157" />
 
 
 
