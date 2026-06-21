@@ -3,6 +3,13 @@
 
 
 
+<img width="1280" height="800" alt="4" src="https://github.com/user-attachments/assets/18bbd87b-1eb8-44d5-a823-a2eaf89d03d6" />
+
+
+
+
+<img width="1280" height="800" alt="4 1" src="https://github.com/user-attachments/assets/844772f6-c08b-4d3b-87c2-4d524087d11e" />
+
 
 
 
@@ -24,6 +31,8 @@
 
 
 
+<img width="1280" height="800" alt="4 2" src="https://github.com/user-attachments/assets/a25f7401-bc4c-46d3-95c7-69b769990ab3" />
+
 
 
 | Command                  | What it does                                                | When you use it                                               |
@@ -40,6 +49,9 @@
 # Group - 3 File Permissions & Ownership Control
 
 
+
+
+<img width="1280" height="800" alt="4 3" src="https://github.com/user-attachments/assets/636915bd-a779-4b47-8545-9ebeff0a7f57" />
 
 
 
@@ -60,6 +72,8 @@
 # Group - 4 Access Control Toolkit
 
 
+
+<img width="1280" height="800" alt="4 4" src="https://github.com/user-attachments/assets/dbd46ecb-f804-43bc-9bed-100366006f55" />
 
 
 
