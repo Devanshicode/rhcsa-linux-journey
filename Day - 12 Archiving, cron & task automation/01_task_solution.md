@@ -1,6 +1,17 @@
 
 # Task 12 - Automated Backup Script
 
+
+
+<img width="1280" height="800" alt="task - 12" src="https://github.com/user-attachments/assets/528ea062-e20e-4ffd-9d31-386fe98dbc6e" />
+
+
+
+## Objective
+Write backup.sh: archives /etc and /srv with date in filename, excludes *.log, uses rsync to sync to /backup/latest/, rotates backups keeping only last 7, logs all actions with timestamps, uses flock to prevent concurrent runs. Schedule it daily at 2AM. Test with --dry-run first.
+
+
+
 ## Step 1 - Create Backup Directory
 
 Command:
