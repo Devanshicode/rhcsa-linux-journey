@@ -270,8 +270,39 @@ package cowsay is not installed
 
 Confirms rollback completed successfully.
 
----
 
-## Result
+
+
+# Key Learning
+
+
+
+While working on package management, I learned that Linux provides multiple ways to inspect installed software beyond just installing packages. After installing the Development Tools group along with nginx, python3, git, vim, and tree, I used package-query commands to explore how software is organized inside the system. Using `rpm -ql nginx` showed the exact locations of nginx configuration files, service files, and directories. I also used `rpm -qf /usr/bin/ssh` to trace a file back to the package that owns it. This helped me understand that every installed file on a Linux system is tracked by an RPM package, making troubleshooting and auditing much easier.
+
+Another interesting part was working with package rollback. I initially thought package installations were permanent unless manually removed, but DNF keeps a transaction history of everything installed, updated, or removed. By intentionally installing an older package version and then checking `dnf history`, I was able to identify the transaction ID and use `dnf history undo` to revert the change. The rollback process restored the system to its previous state without requiring manual cleanup, which showed me how powerful package management tools can be.
+
+This task also highlighted the importance of documenting command outputs. Some commands generated much more information than expected, especially package file listings and transaction histories. I had to carefully verify package versions and transaction IDs before performing the rollback to avoid undoing the wrong change. Understanding these details helped me avoid mistakes and made troubleshooting easier.
+
+The concepts from this task directly connect to real cloud and enterprise environments. System administrators frequently audit package ownership, verify configuration file locations, and track software changes on production servers. In AWS, Azure, and large MNC environments, package history and rollback capabilities are critical when a software update causes issues. Being able to identify package ownership, locate configuration files, and safely reverse changes is an essential skill for maintaining stable and reliable Linux servers.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 Successfully installed Development Tools and required packages, located nginx configuration files, identified package ownership of `/usr/bin/ssh`, simulated package installation, and restored the system using `dnf history undo`.
