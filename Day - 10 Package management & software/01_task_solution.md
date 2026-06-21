@@ -1,6 +1,15 @@
 
 # Task-10: Package Management and DNF Rollback
 
+
+
+
+
+
+
+
+
+
 ## Objective
 
 * Install Development Tools group.
