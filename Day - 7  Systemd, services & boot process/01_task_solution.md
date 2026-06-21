@@ -1,18 +1,21 @@
 
 # Task 7: Install Nginx, Configure Auto-Restart, Create Custom Systemd Service
 
+
+
+<img width="1280" height="800" alt="task 7 1" src="https://github.com/user-attachments/assets/a4c7cae4-eb6f-4292-98ac-9025764cdd62" />
+
+
+
+
+<img width="1280" height="800" alt="task 7 2" src="https://github.com/user-attachments/assets/8171c4f2-32b5-4e1a-8271-34d9041972ce" />
+
+
+
+
 ## Objective
+Install nginx. Kill it with -9 (it won't restart). Edit unit file to add Restart=on-failure RestartSec=5. Test auto-restart by killing again. Create a custom service unit for a bash health-logger script. Enable it. Verify with journalctl -u your-service -f. Write what each line of your unit file does
 
-1. Install Nginx.
-2. Kill Nginx using SIGKILL (-9).
-3. Configure automatic restart using systemd.
-4. Test auto-restart functionality.
-5. Create a custom systemd service for a Bash health logger script.
-6. Enable and start the custom service.
-7. Monitor logs using journalctl.
-8. Understand each line of the systemd unit file.
-
----
 
 ## Step 1: Install Nginx
 
