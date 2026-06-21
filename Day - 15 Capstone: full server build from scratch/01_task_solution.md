@@ -2,6 +2,7 @@
 # Task 15 – Production Ready RHEL Linux Server
 
 
+
 <img width="1280" height="800" alt="TASK 15 1" src="https://github.com/user-attachments/assets/b3748add-6f48-484c-bc5b-127fc9f11323" />
 
 
