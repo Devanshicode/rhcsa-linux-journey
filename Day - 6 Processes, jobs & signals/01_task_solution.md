@@ -224,3 +224,37 @@ cat → Display file contents.
 
 Purpose:
 Analyze captured system calls.
+
+
+
+
+# Key Learning 
+
+At first I thought changing the nice value would immediately show a huge difference between the sleep processes, but then I realized that sleep barely uses CPU, so the priority difference is mostly visible through commands like ps rather than actual performance. Using pstree helped me understand how processes are organized under the parent shell, while ps showed the PID, PPID, and NI (nice value) clearly. It made process management much easier to visualize compared to looking at raw process IDs alone.
+
+When I started sending signals, I expected every signal to terminate the process. After testing, I learned that SIGHUP is traditionally used to tell a process to reload or re-read its configuration instead of killing it. SIGTERM politely asks a process to stop and gives it a chance to clean up resources, whereas SIGKILL immediately removes it from memory with no cleanup at all. Seeing the different behavior of these signals helped me understand why Linux administrators choose signals carefully instead of always using kill -9.
+
+Using lsof with nginx was interesting because it revealed that a running service keeps many files open at the same time, including configuration files, log files, sockets, and libraries. Before this task I assumed a service only interacted with the file it was actively reading or writing. Looking at the open file list showed how much is happening behind the scenes whenever a web server is running.
+
+The biggest learning came from strace. Running strace on a simple ls command showed dozens of system calls such as open, read, close, stat, and write. I always thought ls simply read a directory and printed the result, but strace exposed the actual conversation happening between the application and the Linux kernel. This is very similar to real cloud and MNC environments where engineers use strace to troubleshoot slow applications, identify missing files, debug permission problems, and understand why a service behaves differently on production servers compared to test systems.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
